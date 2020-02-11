@@ -32,6 +32,7 @@ component  output="false" accessors="true"{
 	variables._results = createObject('java','java.util.ArrayList').init();
 	variables._values = {};
 	variables._views = {};
+    variables._contentType = "";
 	
 	public Event function init( required Struct eventHandler, required mvc.Framework framework ){
 		
@@ -41,6 +42,7 @@ component  output="false" accessors="true"{
 		variables._framework = framework;
 		variables._views = new mvc.core.View();
 		variables.helpers = framework.getHelpers();
+        variables._contentType = variables._eventHandler.contentType;
 
 		return this;
 	}
@@ -59,8 +61,13 @@ component  output="false" accessors="true"{
 		return variables._views.exists( name );
 	}
 
+    public Void function setContentType( required String contentType ){
+        variables._contentType = arguments.contentType;
+    }
+
     public String function getContentType(){
-        return variables._eventHandler.contentType;
+        //return variables._eventHandler.contentType;
+        return variables._contentType;
     }
 	
 	/*************************************************************************************    
