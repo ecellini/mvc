@@ -347,7 +347,7 @@ component  output="false" accessors="true"{
 
                     }else{
 
-                        this.forward( event=result.to, append=result.append, statuscode=result.statuscode );
+                        this.forward( event=result.to, append=result.append, anchor=result.anchor, statuscode=result.statuscode );
 
                     }
 
