@@ -1,0 +1,15 @@
+{
+    "rule": [ ],
+    "excludes": [
+    ],
+    "includes": [
+      {
+        "code": "MISSING_VAR"
+      },
+      {
+        "code": "UNUSED_LOCAL_VARIABLE"
+      }
+    ],
+    "inheritParent": false,
+    "parameters": { }
+}
