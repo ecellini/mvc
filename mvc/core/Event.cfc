@@ -21,10 +21,10 @@
 **/
 component  output="false" accessors="true"{
 	
-	property mvc.util.adapters.ICacheAdapter cacheAdapter;
-	property Struct eventHandler;
-	property mvc.core.View _views;
-	property Any helpers;
+	property type="mvc.util.adapters.ICacheAdapter" name="cacheAdapter";
+	property type="Struct" name="eventHandler";
+	property type="mvc.core.View" name="_views";
+	property type="Any" name="helpers";
 	
 	variables.helpers = {};
 	

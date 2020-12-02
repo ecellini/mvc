@@ -21,7 +21,7 @@
 **/
 component output="false" accessors="true" {
 
-	property Struct instance;
+	property type="Struct" name="instance";
 
 	variables.instance = {};
 		

@@ -1,0 +1,14 @@
+{
+    "name":"MVC",
+    "scripts":{
+        "watch":"task run target=startWatch taskfile=build/task.cfc",
+        "clean-deploy":"task run target=clean_deploy taskfile=build/task.cfc :dest=d:/Temp/mvc-test/"
+    },
+    "version":"1.1.18",
+    "devDependencies":{
+        "testbox":"4.x"
+    },
+    "installPaths":{
+        "testbox":"testbox/"
+    }
+}

@@ -22,22 +22,22 @@
 component  output="false" accessors="true"{
 	
 	// utils
-	property mvc.util.url.IURLManager urlManager;
-	property mvc.util.template.TemplateRenderer templateRenderer;
-	property mvc.util.adapters.ICacheAdapter cacheAdapter;
-	property mvc.util.log.ILogger logger;
-	property Struct helpers;
+	property type="mvc.util.url.IURLManager" name="urlManager";
+	property type="mvc.util.template.TemplateRenderer" name="templateRenderer";
+	property type="mvc.util.adapters.ICacheAdapter" name="cacheAdapter";
+	property type="mvc.util.log.ILogger" name="logger";
+	property type="Struct" name="helpers";
 	
 	// IOC Adapter
-	property mvc.util.adapters.IBeanFactoryAdapter beanFactory;
+	property type="mvc.util.adapters.IBeanFactoryAdapter" name="beanFactory";
 	
 	// configurations
-	property Struct listeners;
-	property Struct controllers;
-	property Struct eventHandlers;
-	property Struct interceptors;
-	property Struct aliases;
-	property Struct configurations;
+	property type="Struct" name="listeners";
+	property type="Struct" name="controllers";
+	property type="Struct" name="eventHandlers";
+	property type="Struct" name="interceptors";
+	property type="Struct" name="aliases";
+	property type="Struct" name="configurations";
 	
 	// default configurations
 	variables.configurations = {};
