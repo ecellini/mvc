@@ -22,8 +22,8 @@
 
 component output="false" accessors="true"{
 	
-	property Any beanFactory;
-	property Any helpers;
+	property type="Any" name="beanFactory";
+	property type="Any" name="helpers";
 	
 	public Controller function init( required Any framework ){
 		return this;

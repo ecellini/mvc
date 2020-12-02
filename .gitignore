@@ -6,3 +6,5 @@ mvc.iml
 tasks/conf/apollo.properties
 
 target/
+
+.vscode/
