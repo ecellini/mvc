@@ -30,7 +30,5 @@ request._framework.executeEvent( name='framework.onRequestEnd', eh=event );
 
 view = event.getView( 'main' );
 </cfscript>
-<cfcontent type="#event.getContentType()#" />
 <cfheader statuscode="#event.getValue( 'http-status-code' )#" />
-
-<cfset writeOutput( view ) />
+<cfcontent type="#event.getContentType()#" /><cfset writeOutput( view ) />
