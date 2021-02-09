@@ -36,13 +36,9 @@
     	<cfargument name="template" type="String" required="true" />
 		<cfset var viewrenderer = "" />
 			
-		<cfsavecontent variable="viewrenderer">
-		
-			<cfmodule template="/mvc/util/template/templateRenderer.cfm" 
+		<cfsavecontent variable="viewrenderer"><cfmodule template="/mvc/util/template/templateRenderer.cfm" 
 					  includePath="/#variables.configTemplatePath#/#template#"
-					  event="#arguments.event#" />
-		
-		</cfsavecontent>
+					  event="#arguments.event#" /></cfsavecontent>
 			
 		<cfreturn viewrenderer />
     </cffunction>

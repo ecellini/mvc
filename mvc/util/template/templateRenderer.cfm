@@ -20,8 +20,7 @@
   *
   *
 **/
---->
-<cfif thistag.executionmode eq "start"><cfsilent>
+---><cfif thistag.executionmode eq "start"><cfsilent>
 
 <cfscript>
 
